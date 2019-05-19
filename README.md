@@ -42,3 +42,26 @@ Error: error B
 End of multiple errors (2).
 */
 ```
+
+# Docs
+
+## `MultiError.prototype.getErrors()`
+
+Returns the list of errors.
+
+Equivalent to:
+```javascript
+this[MultiError.errsSymbol].slice(0);
+```
+
+-----
+
+## `MultiError.errsSymbol`
+
+Symbol for getting errors.
+
+-----
+
+## `MultiError.origStack`
+
+Symbol for the error's original stack.
