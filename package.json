@@ -1,8 +1,9 @@
 {
   "name": "@yo1dog/multi-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Multiple error handling.",
   "main": "lib/MultiError.js",
+  "types": "lib/MultiError.d.ts",
   "directories": {
     "lib": "lib"
   },
