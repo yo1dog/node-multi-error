@@ -1,9 +1,15 @@
 # node-multi-error
 
+Multiple error handling.
+
+```
+npm install @yo1dog/multi-error
+```
+
 ## Quick Start
 
 ```javascript
-const MultiError = require('@yo1dog/multi-error');
+const {MultiError} = require('@yo1dog/multi-error');
 
 const errA = new Error('error A');
 const errB = new Error('error B');
@@ -45,23 +51,18 @@ End of multiple errors (2).
 
 # Docs
 
-## `MultiError.prototype.getErrors()`
+## `MultiError#errors`
 
-Returns the list of errors.
-
-Equivalent to:
-```javascript
-this[MultiError.errsSymbol].slice(0);
-```
+List of errors.
 
 -----
 
-## `MultiError.errsSymbol`
+## `MultiError#getErrors()`
 
-Symbol for getting errors.
+List of errors.
 
 -----
 
-## `MultiError.origStack`
+## `MultiError.origStackSymbol`
 
 Symbol for the error's original stack.
